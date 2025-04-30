@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik's Website</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,1,0"/>
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/top.css">
+    <link rel="icon" type="image/png" sizes="512x512" href="media/k.png">
+
+    <!-- <link rel="stylesheet" href="styles/hireme.css"> -->
+</head>
+<body style="background-color: #000000; ">
+<!-- class="min-h-screen flex flex-col items-center justify-center" color: #e5e7eb; -->
+<header class="flex flex-col">
+    <!-- <div class="text-center mb-6 bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-3xl font-black">
+      Hover Them
+    </div> -->
+    <div class="border border-gray-300 py-3 flex gap-1 shadow-xl rounded-md items-center justify-center fixed top-5 left-1/2 transform -translate-x-1/2 bg-white z-50">
+        <div class="group relative px-4 cursor-pointer">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 text-blue-500">
+                <a href="home.html">
+				<span class="material-symbols-rounded" style="font-size: 40px;">
+					home
+				</span></a>
+            </div>
+            <span class="absolute -top-8 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+		  Home
+		</span>
+        </div>
+        <div class="group relative px-4 cursor-pointer">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500">
+                <a href="portfolio.html">
+				<span class="material-symbols-rounded" style="font-size: 40px;">
+					work
+					</span></a>
+            </div>
+            <span class="absolute -top-8 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+		  PortFolio
+		</span>
+        </div>
+        <div class="group relative px-4 cursor-pointer">
+            <div class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 material-icons">
+                <a href="contact.html">
+			<span class="material-symbols-rounded" style="font-size: 40px;">
+				person
+				</span></a>
+            </div>
+            <span class="absolute -top-8 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+		  Contact
+		</span>
+        </div>
+    </div>
+</header>
+
+
+<main style="margin-top: 100px;">
+    <section class="body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 mx-auto">
+                <img class="object-cover object-center rounded-full" alt="profile of kartik" src="media/1.jpg">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center rajdhani-bold">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-500">
+                    <!-- Unlocking the Future of Cybersecurity
+                  <br class="hidden lg:inline-block"> and Web Development -->
+                    I am <span id="typed-output"></span>
+                </h1>
+                <p class="mb-8 leading-relaxed text-gray-400 chakra-petch-medium">Innovative Solutions by Kartik Rohilla
+                    – Crafting Secure and Stunning Websites to Propel Your Business Forward.</p>
+                <div class="flex justify-center">
+                    <button onclick="hireMe()"
+                            class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg ui-btn">
+					<span>
+					Hire Me..!!
+				    </span></button>
+                    <button onclick="downloadCV()"
+                            class="ml-4 inline-flex text-white bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 hover:text-white rounded text-lg"
+                            href="media/kartik.resume.pdf" target="_blank">
+                        Download CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="body-font text-gray-400 ksnap">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <!-- <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2> -->
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-500 rajdhani-bold">About Me</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400 chakra-petch-medium">Hi, I'm Kartik
+                    Rohilla, a passionate cybersecurity enthusiast and web developer with a knack for creating secure
+                    and visually appealing websites. With a strong foundation in HTML, CSS, TailwindCSS, and Python, I
+                    have developed multiple websites and Firefox extensions that are currently available on the
+                    store.</p>
+            </div>
+            <div class="flex flex-wrap chakra-petch-medium">
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800 text-gray-400">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2 chakra-petch-medium">Web
+                        Development</h2>
+                    <p class="leading-relaxed text-base mb-4 chakra-petch-light">Crafting responsive, visually appealing
+                        websites using HTML and CSS (& TailwindCSS) for a seamless user experience</p>
+                    <!-- <a class="text-blue-500 inline-flex items-center">Learn More
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a> -->
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">A.I. Operator</h2>
+                    <p class="leading-relaxed text-base mb-4 chakra-petch-light">Implementing AI algorithms to solve
+                        complex problems and enhance decision-making processes efficiently.</p>
+                    <!-- <a class="text-blue-500 inline-flex items-center">Learn More
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a> -->
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">CyberSecurity</h2>
+                    <p class="leading-relaxed text-base mb-4 chakra-petch-light">Ensuring data protection and system
+                        security through advanced cybersecurity practices and tools.</p>
+                    <!-- <a class="text-blue-500 inline-flex items-center">Learn More
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a> -->
+                </div>
+                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800">
+                    <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">Extension Development</h2>
+                    <p class="leading-relaxed text-base mb-4 chakra-petch-light">Developed powerful browser extensions
+                        of firefox to enhance web functionality and user productivity.</p>
+                    <!-- <a class="text-blue-500 inline-flex items-center">Learn More
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a> -->
+                </div>
+            </div>
+            <!-- <button class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Know all my skills</button> -->
+        </div>
+    </section>
+
+
+    <section class="body-font text-gray-400 ksnap">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-500 rajdhani-bold items-center justify-center flex">
+                Projects</h1>
+            <div class="flex flex-wrap -mx-4 -my-8 mt-5">
+                <div class="py-8 px-4 lg:w-1/3 chakra-petch-medium">
+                    <div class="h-full flex items-start">
+                        <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                            <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Aug</span>
+                            <span class="font-medium text-lg leading-none text-gray-300 title-font">21</span>
+                        </div>
+                        <div class="flex-grow pl-6">
+                            <h2 class="tracking-widest text-xs title-font text-blue-400 mb-1">WEBSITE</h2>
+                            <h1 class="title-font text-xl font-medium text-white mb-3 rajdhani-bold">Speedy Website for
+                                a Classmate</h1>
+                            <p class="leading-relaxed mb-5 chakra-petch-light">Proved my web development skills by
+                                creating a full webpage in just 7 minutes using TailwindCSS for a bet with a classmate.
+                                This project showcases my quick problem-solving abilities and proficiency in front-end
+                                development.</p>
+                            <a class="inline-flex items-center">
+                                <img alt="prashant photo" src="media/prashant.jpg"
+                                     class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-3">
+						  <span class="title-font font-medium text-white chakra-petch-light">Prashant</span>
+						</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-8 px-4 lg:w-1/3 chakra-petch-medium">
+                    <div class="h-full flex items-start">
+                        <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                            <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">Jan</span>
+                            <span class="font-medium text-lg leading-none text-gray-300 title-font">24</span>
+                        </div>
+                        <div class="flex-grow pl-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">EXTENSION</h2>
+                            <h1 class="title-font text-xl font-medium text-white mb-3 rajdhani-bold">Privacy-Friendly
+                                Firefox Extension</h1>
+                            <p class="leading-relaxed mb-5 chakra-petch-light">Developed a Firefox extension to add
+                                Google Labs support without compromising privacy. This extension modifies Google source
+                                code to enhance functionality, inspired by existing solutions but improved with a focus
+                                on user privacy.</p>
+                            <a class="inline-flex items-center"
+                               href="https://addons.mozilla.org/en-US/firefox/addon/google-labs-fix-air/"
+                               target="_blank">
+                                <img alt="public logo" src="media/groups_24dp_FILL1_wght500_GRAD0_opsz24.png"
+                                     class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+
+                                <span class="flex-grow flex flex-col pl-3">
+						  <span class="title-font font-medium text-white">Public</span>
+						</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-8 px-4 lg:w-1/3 chakra-petch-medium">
+                    <div class="h-full flex items-start">
+                        <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                            <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700">May</span>
+                            <span class="font-medium text-lg leading-none text-gray-300 title-font">24</span>
+                        </div>
+                        <div class="flex-grow pl-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-blue-400 mb-1">WEBSITE</h2>
+                            <h1 class="title-font text-xl font-medium text-white mb-3 rajdhani-bold">Website for Grand
+                                Theft Coders</h1>
+                            <p class="leading-relaxed mb-5 chakra-petch-light">Designed and built a comprehensive
+                                website for Grand Theft Coders, displaying their social media links and projects. This
+                                site enhances their online presence and showcases the tools they’ve developed for the
+                                public.</p>
+                            <a href="https://teamgtc.live" target="_blank" class="inline-flex items-center">
+                                <img alt="logo of grand theft coders" src="media/logo.jpg"
+                                     class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-3">
+						  <span class="title-font font-medium text-white">Grand Theft Coders</span>
+						</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="body-font text-gray-400 ksnap">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font mb-12 text-center text-blue-500 rajdhani-bold">Testimonials</h1>
+            <div class="flex flex-wrap -m-4 chakra-petch-light">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                             class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+                            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Kartik is an exceptional web developer with a keen eye for
+                            detail. His work on my project was outstanding & super speedy. I apreciate his exploring
+                            speed of anything!</p>
+                        <a class="inline-flex items-center" href="https://www.linkedin.com/in/hitesh-kumar-4921ab2b0/"
+                           target="_blank">
+                            <img alt="profile of hitesh" src="media/hitesh profile.jpg"
+                                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+						<span class="title-font font-medium text-white">Hitesh Kumar</span>
+						<span class="text-gray-500 text-sm">FRIEND</span>
+					  </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                             class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+                            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Kartik's dedication and passion for mathematics are
+                            unparalleled. His remarkable improvement and 92 percentile in JEE Mains reflect his hard
+                            work and enthusiasm in maths. Truly inspiring!</p>
+                        <a class="inline-flex items-center" href="https://www.facebook.com/kuldeep.singh.7712"
+                           target="_blank">
+                            <img alt="profile of kuldeep sir" src="media/aryan.jpg"
+                                 class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+						<span class="title-font font-medium text-white">Kuldeep Singh</span>
+						<span class="text-gray-500 text-sm">TEACHER</span>
+					  </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="body-font relative text-gray-400 ksnap z-20">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-500 rajdhani-bold">Contact Me</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base chakra-petch-light">Looking forward to connecting
+                    and collaborating with you to create something amazing!</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <form action="https://formspree.io/f/mkndlrgw" method="POST"
+                      class="flex flex-wrap -m-2 chakra-petch-light">
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+                            <input type="text" id="name" name="name"
+                                   class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                            <input type="email" id="email" name="email"
+                                   class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+                            <textarea id="message" name="message"
+                                      class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                    </div>
+                    <div class="p-2 w-full">
+                        <button type="submit"
+                                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                            Send
+                        </button>
+                    </div>
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                        <a class="text-blue-400" href="mailto:kartik2005221@proton.me">kartik2005221@proton.me</a>
+                        <p class="leading-normal my-5">Behind SMS School
+                            <br>Kanina, M.Garh, Haryana - 123027
+                        </p>
+                        <!-- <span class="inline-flex">
+                          <a class="text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-4 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-4 text-gray-500">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                          </a>
+                          <a class="ml-4 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>
+                          </a>
+                        </span> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+<footer class="body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+            <img src="media/1.jpg" alt="profile of kartik" class="w-10 h-10 rounded-full">
+            <span class="ml-3 text-xl dosis-800">kartik2005221</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4 chakra-petch-light">
+            Made with love by
+            <a href="https://t.me/Dr_AiR" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@AiR</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+			<a class="text-gray-400 hover:text-white" href="https://www.linkedin.com/in/kartik-rohilla-a6aa03298/"
+               target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-linkedin" viewBox="0 0 16 16">
+					<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+				  </svg>
+			</a>
+			<a class="ml-3 text-gray-400  hover:text-white" href="https://x.com/kartik2005221" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-twitter-x" viewBox="0 0 16 16">
+					<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+				  </svg>
+			</a>
+			<a class="ml-3 text-gray-400 hover:text-white" href="https://instagram.com/kartik2005221" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-instagram" viewBox="0 0 16 16">
+					<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+				  </svg>
+			</a>
+		  </span>
+    </div>
+</footer>
+
+
+<button class="ktopbutton" id="ktopbttn" onclick="topFunction()">
+    <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+    </svg>
+</button>
+
+<script src="scripts/top.js"></script>
+<script src="scripts/iam.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/
+   jquery/3.5.1/jquery.min.js">
+</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="scripts/typed.js"></script>
+<!-- <script src="node_modules/typed.js/dist/typed.umd.js"></script> -->
+<script>
+    function hireMe() {
+        window.open('https://x.com/messages/compose?recipient_id=kartik2005221')
+    }
+
+    function downloadCV() {
+        window.open('media/kartik.resume.pdf')
+    }
+</script>
+<script src="scripts/right.click.not.js"></script>
+</body>
+</html>

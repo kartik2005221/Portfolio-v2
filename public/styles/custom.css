@@ -1,0 +1,82 @@
+.koutline {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.rect {
+    stroke-dashoffset: 5;
+    stroke-dasharray: 0 0 10 40 10 40;
+    transition: 0.5s;
+    stroke: #fff;
+}
+
+.knav {
+    position: relative;
+    width: 400px;
+    height: 60px;
+}
+
+.kontainer:hover .outline .rect {
+    transition: 999999s;
+    /* Must specify these values here as something *different* just so that the transition works properly */
+    stroke-dashoffset: 1;
+    stroke-dasharray: 0;
+}
+
+.kontainer {
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 50, 180, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.kbtn {
+    padding: 0.5em 1.5em;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.kbtn:hover {
+    background: #fff3;
+}
+
+.kbtn:nth-child(1):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 0.3 8 74.5 8 15.7;
+}
+
+.kbtn:nth-child(2):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 10.1 10.5 50 10.5 31.6;
+}
+
+.kbtn:nth-child(3):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 21.6 8.3 31.3 8.3 55.5;
+}
+
+.kbtn:nth-child(4):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 31.5 9.4 9.5 9.5 76;
+}
+
+.kbtn:hover ~ .outline .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 0 10 40 10 40;
+    transition: 0.5s !important;
+}
+
+/*.kbtn:nth-child(1):hover ~ svg .rect,*/
+/*.kbtn:nth-child(2):hover ~ svg .rect,*/
+/*.kbtn:nth-child(3):hover ~ svg .rect,*/
+/*.kbtn:nth-child(4):hover ~ svg .rect {*/
+/*    stroke-dashoffset: 0;*/
+/*    stroke-dasharray: 0 10 10 70 10 10; !* Adjusted for symmetry *!*/
+/*    transition: 0.5s !important;*/
+/*}*/

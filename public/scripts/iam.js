@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed('#typed-output', {
-        strings: ["a Cybersecurity Student", "a Web Developer", "a Extension Developer", "a Lifelong Learner"],
-        typeSpeed: 60,
-        backSpeed: 40,
+        strings: ["Cyber Student", "Python Developer", "Tech Enthusiast", "Ethical Hacker"],
+        typeSpeed: 40,
+        backSpeed: 20,
         backDelay: 1500,
         loop: true,
-        showCursor: false,
-        cursorChar: '|',
+        showCursor: true,
+        cursorChar: '_',
     });
 });
