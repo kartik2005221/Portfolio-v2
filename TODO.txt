@@ -1,0 +1,4 @@
+- move header from top to right side
+- light theme
+- remove signal and add new
+- gap bw hero and about
