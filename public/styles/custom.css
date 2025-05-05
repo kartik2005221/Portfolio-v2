@@ -31,7 +31,7 @@ html {
 .kontainer {
     position: absolute;
     inset: 0;
-    background: rgb(224, 224, 224);
+    background: rgba(206, 220, 255, 0.75);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
