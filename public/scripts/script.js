@@ -1,7 +1,3 @@
-function hireMe() {
-    window.open('mailto:kartik2005221@proton.me')
-}
-
 function downloadCV() {
     window.open('media/kartik.resume.pdf')
 }
